@@ -7,16 +7,28 @@ body {
   font-size: 1.8vw;
 }
 
-table, th, td {
-  border: 1px solid black;
-  border-width: 3px;
-  border-style: ridge;
-  text-align: left;
-  padding: 3px;
+#table {
+    border-collapse: collapse;
+    width: 100%;
 }
 
-table {
-  width: 100%;
+#table td, #table th {
+    border: 1px solid #ddd;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    padding-left: 1%;
+}
+
+#table tr:nth-child(even){background-color: #f2f2f2;}
+
+#table tr:hover {background-color: #ddd;}
+
+#table th {
+    padding-top: 1.2%;
+    padding-bottom: 1.2%;
+    text-align: left;
+    background-color: #4CAF50;
+    color: white;
 }
 
 .font {
@@ -148,6 +160,10 @@ table {
   overflow: hidden;
 }
 
+.rline {
+  display: none;
+}
+
 @media screen and (max-width: 650px) {
   .column {
     width: 100%;
@@ -165,7 +181,6 @@ table {
   .extra {
     display:none;
   }
-  
 }
 
 .card {

@@ -1,0 +1,36 @@
+div {
+  position: relative;
+}
+#nav {
+  cursor: pointer;
+  left: 50%; top: 0;
+  margin-left: 25%; /* negative margin equal to half the width */
+  width: 750px;
+  font-size: 2vw; 
+  list-style: none;
+  background-color: inherit;
+}
+#nav li {
+  float: left;
+}
+#nav a {
+  display:inline
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+} 
+#nav a:hover {
+  color: green;
+}
+
+#nav a.active {
+  color: green;
+  background-color: inherit;
+  border-top-style: none;
+  border-right-style: none;
+  border-bottom-style: ridge;
+  border-left-style: none;
+  border-width: medium;
+  border-color: green;
+} 

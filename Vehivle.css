@@ -1,0 +1,55 @@
+.vleft {
+  margin-left: 2%;
+  margin-top: 2%;
+  float: left;
+  max-width: 40%;
+  padding-bottom: 4%;
+  overflow: hidden;
+}
+
+.vright {
+  margin-left: 45%;
+  margin-top: 2%;
+  padding-right: 2%;
+  padding-bottom: 4%;
+  overflow: hidden;
+  max-width: 40%
+}
+
+.name {
+  color: black;
+  font-size: 1.5vw;
+  padding: 8px 12px;
+  position: absolute;
+  top: 50%;
+  left:50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+  opacity: 0;
+}
+
+.photo {
+  position: relative;
+  margin-left:0;
+  width: 19.5%;
+  float: left;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 0 8px;
+  border-width: medium;
+  border-color: white; 
+}
+
+.pic {
+  width: 100%;
+  transition: .5s ease;
+}
+
+.photo:hover .pic {
+  opacity: 0.4;
+}
+
+
+.photo:hover .name{
+  opacity: 1;
+}

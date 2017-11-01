@@ -1,0 +1,55 @@
+
+
+.row > .col1 {
+  padding: 0 0.8%;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.col1 {
+  float: left;
+  width: 50%;
+  position: relative;
+  margin-left: 4%;
+  margin-top: 5.5%;
+}
+
+.col2 {
+  float: left;
+  width: 30%;
+  position: relative;
+  margin-left: 7%;
+}
+
+.col3 {
+  float: left;
+  width: 25%;
+  position: relative;
+  margin-left: 18%;
+}
+
+.col4 {
+  float: left;
+  width: 25%;
+  position: relative;
+  margin-left: 10%;
+}
+
+.col5 {
+  float: left;
+  width: 35%;
+  position: relative;
+  margin-left: 7%;
+}
+
+.col6 {
+  float: left;
+  width: 35%;
+  position: relative;
+  margin-left: 10%;
+  margin-top: 2%;
+}

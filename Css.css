@@ -7,6 +7,25 @@ body {
   font-size: 1.8vw;
 }
 
+#navbar1 {
+  z-index: 5;
+  width: 100%;
+  position: fixed;
+  top: 0;
+}
+
+
+#bg {
+  position: fixed; 
+  top: 0; 
+  left: 0; 
+	
+  /* Preserve aspet ratio */
+  width: 100%;
+  height: 100%;
+  z-index: -2;
+}
+
 #table {
     border-collapse: collapse;
     width: 100%;
@@ -32,7 +51,23 @@ body {
 }
 
 .font {
-  font-family: Arial Narrow", Arial, "Helvetica Condensed;
+  font-family: Cardo;
+  font-size: 1.8vw;
+}
+
+.head1 {
+  font-family: Linden Hill;
+  font-size: 4vw;
+}
+
+.head2 {
+  font-family: Linden Hill;
+  font-size: 3vw;
+}
+
+.head3 {
+  font-family: Linden Hill;
+  font-size: 2.2vw;
 }
 
   
@@ -43,31 +78,32 @@ body {
 }
 
 .head {
-  background-color: #f1f1f1;
-  padding: 15px;
+  padding-top: 5%;;
   text-align: center;
 }
+
 .social {
-  background-image: url("underwater_by_sugarock99-d36m8h9.jpg");
+  background-image: url("374296.jpg");
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 100% 100%;
 }
 
 
 .left {
-  margin-left: 2%;
-  margin-top: 2%;
+  margin-left: 4%;
+  margin-top: 3.2%;
   float: left;
-  max-width: 50%;
-  padding-bottom: 4%;
+  max-width: 45%;
+  padding-bottom: 5%;
   overflow: hidden;
+  line-height: 140%;
 }
 
 .right {
   margin-left: 55%;
   margin-top: 2%;
-  padding-right: 2%;
+  padding-right: 4%;
   padding-bottom: 4%;
   overflow: hidden;
   max-width: 40%
@@ -82,12 +118,34 @@ body {
   border-radius: 10px;
   background-color: white;
 }
+.hright {
+  margin-left: 45%;
+}
+
+.hleft {
+  font-family: Akronim;
+  margin-left: 18%;
+  color: blue;
+  max-width: 30%;
+  margin-top:-10%;
+  z-index: 3;
+  font-size: 4vw;
+}
+
+.himage {
+  position: absolute;
+  width: 9%;
+  z-index: 4;
+  margin-left: 5%;
+  margin-top: -6%;
+}
 
 #navbar {
   overflow: hidden;
   background-color: #000000;
   z-index: 2;
   opacity: 1;
+  width: 100%;
 }
   
 #navbar a {
@@ -95,7 +153,7 @@ body {
   display: block;
   color: #f2f2f2;
   text-align: center;
-  padding: 1% 1.5%;
+  padding: 4% 2.7%;
   text-decoration: none;
   font-size: 2vw;
 }
@@ -105,30 +163,35 @@ body {
   max-height:100%;
 }
 #navbar a:hover {
-  color: green;
+  color: blue;
 }
 
 #navbar a.active {
-  background-color: #006400;
-  color: black;
+  color: blue;
+  background-color: black;
 }
 
 .content {
-  padding-left: 1%;
-  padding-right: 1%;
+  padding-left: 4%;
+  padding-right: 4%;
   padding-bottom: 2%;
   padding-top: 2%;
+  line-height: 150%;
 }
 
 
 .sticky {
   position: fixed;
   top: 0;
-  width: 100%
+  width: 100%;
+}
+
+.sticky :.slider {
+  margin-top: 0; 
 }
 
 .sticky + .content {
-  padding-top: 60px;
+  padding-top: 6%;
 }
 
 
@@ -165,10 +228,6 @@ body {
 }
 
 @media screen and (max-width: 650px) {
-  .column {
-    width: 100%;
-    display: block;
-  }
   .left {
     margin-left:0;
     margin-top:0;
@@ -185,6 +244,7 @@ body {
 
 .card {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  background-color: #f1f1f1;
 }
 
 .contain {
@@ -222,6 +282,7 @@ body {
   
 .container {
   padding: 0 3%;
+  font-family: Linden Hill;
   font-size: 1.5vw;
 }
 
@@ -244,7 +305,7 @@ body {
 }
 
 .tex a:hover {
-  color: green;
+  color: blue;
 }
 .title{
   color:gray;
@@ -280,14 +341,14 @@ body {
   width: 100%;
   padding: 0.5% 0 0.5% 2.5%;
   background-color: black;
-  color: #7FFFD4;
+  color: white;
   text-align: left;
 }
 
 .fa {
   padding: 1%;
-  font-size: 3vw;
-  width: 4vw;
+  font-size: 6vw;
+  width: 5%;
   text-align: center;
   text-decoration: none;
   margin: 1% 1%;

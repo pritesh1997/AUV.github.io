@@ -34,3 +34,57 @@ div {
   border-width: medium;
   border-color: green;
 } 
+
+@media all and (max-width: 1200px) {
+  #nav a {
+    padding: 12.29px 14.055px;
+  }
+}
+
+@media all and (max-width: 1100px) {
+  #nav a {
+    padding: 11.27px 12.88px;
+  }
+}
+
+@media all and (max-width: 1000px) {
+  #nav a {
+    padding: 10.24px 11.71px;
+  }
+}
+
+@media all and (max-width: 900px) {
+  #nav a {
+    padding: 9.22px 10.54px;
+  }
+}
+
+@media all and (max-width: 800px) {
+  #nav a {
+    padding: 8.19px 9.37px;
+  }
+}
+
+@media all and (max-width: 700px) {
+  #nav a {
+    padding: 7.17px 8.199px;
+  }
+}
+
+@media all and (max-width: 600px) {
+  #nav a {
+    padding: 6.14px 7.02px;
+  }
+}
+
+@media all and (max-width: 500px) {
+  #nav a {
+    padding: 5.12px 5.85px;
+  }
+}
+
+@media all and (max-width: 400px) {
+  #nav a {
+    padding: 4.09px 4.68px;
+  }
+}

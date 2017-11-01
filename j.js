@@ -1,11 +1,11 @@
-var navbar = document.getElementById("navbar");
-var sticky = navbar.offsetTop;
+var navbar1 = document.getElementById("navbar1");
+var sticky = navbar1.offsetTop;
 
 function myFunction() {
   if (window.pageYOffset >= sticky) {
-    navbar.classList.add("sticky")
+    navbar1.classList.add("sticky")
   } else {
-    navbar.classList.remove("sticky");
+    navbar1.classList.remove("sticky");
   }
 }
 

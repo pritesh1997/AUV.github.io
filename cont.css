@@ -1,0 +1,342 @@
+html {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-size: 1.8vw;
+}
+
+#bg {
+  position: fixed; 
+  top: 0; 
+  left: 0; 
+	
+  /* Preserve aspet ratio */
+  width: 100%;
+  height: 100%;
+  z-index: -2;
+}
+div.opacity {
+   opacity: 0.8;
+   filter: alpha(opacity=80);
+}
+
+.opacity ul {
+  opacity: 1;
+} 
+
+#navbar {
+  overflow: hidden;
+  background-color: #000000;
+  z-index: 2;
+  opacity: 1;
+}
+  
+#navbar a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 1% 1.5%;
+  text-decoration: none;
+  font-size: 2vw;
+}
+
+#navbar a:hover {
+  color: green;
+}
+
+#navbar a.active {
+  background-color: #006400;
+  color: black;
+}
+
+.bc {
+  background-color: black;
+  width: 100%;
+  height: 100%;
+  z-index: 0.4;
+}
+
+.blur {
+    -webkit-filter: blur(0px);
+    filter: blur(0px);
+}
+
+ul {
+  list-style: none;
+  padding: 1.4% 1.6%;
+  filter: alpha(opacity=100);
+  opacity: 1;
+}
+
+li {
+  opacity: 1;
+}
+
+h1 {
+  text-align: center;
+  color: blue;
+  border: 5px solid blue;
+  margin-left: 35%;
+  margin-right: 35%;
+}
+
+h2 {
+  text-align: center;
+  color: white;
+  opacity: 1;
+}
+
+.cleft {
+  margin-left: 2%;
+  margin-top: 0%;
+  float: left;
+  max-width: 50%;
+  padding-bottom: 4%;
+  overflow: hidden;
+  list-style: none;
+  color: white;
+}
+
+.cright {
+  margin-left: 53%;
+  margin-top: 1%;
+  overflow: hidden;
+  max-width: 45%;
+  list-style: none;
+  color: white;
+  margin-right: 4%;
+  border-left: medium solid white;
+  margin-bottom: 2%;
+}
+
+.back1 {
+  background-image: url("8e9718832e7b6574c7bfcf313d438582.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-left: 5%;
+  margin-right: 3%;
+  border-style: hidden;
+  border-radius: 5%;
+  filter: alpha(opacity=80);
+  opacity: 0.8;
+}
+
+.back {
+  background-color: black;
+  color: white;
+  margin-left: 5%;
+  margin-right: 3%;
+  border-style: hidden;
+  border-radius: 5%;
+  opacity: 0.8;
+}
+
+.det {
+  padding-left: 2%;
+  padding-right: 2%;
+  line-height: 200%;
+}
+
+.details {
+  color: white;
+  line-height: 200%;
+  font-size: 1.78vw;
+  padding: 2%;
+}
+
+.left {
+  margin-left: 3%;
+  margin-top: 2%;
+  float: left;
+  max-width: 50%;
+  padding-bottom: 4%;
+  overflow: hidden;
+  border-style: hidden;
+  border-radius: 0%;
+}
+
+.right {
+  margin-left: 50%;
+  margin-top: 2.3%;
+  overflow: hidden;
+  max-width: 40%
+  max-height: 55%
+  list-style: none;
+  color: white;
+  margin-right: 4%;
+}  
+
+#map1 {
+  position: relative;
+  height: 375px;
+  width: 100%;
+}
+
+#map {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left:0;
+  width: 100% !important;
+  height: 100% !important;
+}
+
+
+@media all and (max-width: 1920px) {
+  #map1 {
+  height: 527.08px;
+  }
+}
+
+@media all and (max-width: 1800px) {
+  #map1 {
+  height: 494.14px;
+  }
+}
+
+@media all and (max-width: 1700px) {
+  #map1 {
+  height: 466.69px;
+  }
+}
+
+@media all and (max-width: 1600px) {
+  #map1 {
+  height: 439.23px;
+  }
+}
+
+@media all and (max-width: 1500px) {
+  #map1 {
+  height: 411.78px;
+  }
+}
+
+@media all and (max-width: 1400px) {
+  #map1 {
+  height: 384.33px;
+  }
+}
+
+@media all and (max-width: 1300px) {
+  #map1 {
+  height: 356.88px;
+  }
+}
+
+@media all and (max-width: 1250px) {
+  #map1 {
+  height: 343.15px;
+  }
+}
+
+@media all and (max-width: 1200px) {
+  #map1 {
+  height: 329.42px;
+  }
+}
+
+@media all and (max-width: 1150px) {
+  #map1 {
+  height: 315.70px;
+  }
+}
+
+@media all and (max-width: 1100px) {
+  #map1 {
+  height: 301.97px;
+  }
+}
+
+
+@media all and (max-width: 1075px) {
+  #map1 {
+  height: 295.11px;
+  }
+}
+
+
+@media all and (max-width: 1025px) {
+  #map1 {
+  height: 281.38px;
+  }
+}
+
+
+@media all and (max-width: 975px) {
+  #map1 {
+  height: 267.66px;
+  }
+}
+
+@media all and (max-width: 950px) {
+  #map1 {
+  height: 260.79px;
+  }
+}
+
+
+@media all and (max-width: 875px) {
+  #map1 {
+  height: 240.20px;
+  }
+}
+
+@media all and (max-width: 800px) {
+  #map1 {
+  height: 219.61px;
+  }
+}
+
+
+@media all and (max-width: 725px) {
+  #map1 {
+  height: 199.03px;
+  }
+}
+
+
+@media all and (max-width: 700px) {
+  #map1 {
+  height: 192.16px;
+  }
+}
+
+@media all and (max-width: 675px) {
+  #map1 {
+  height: 185.303px;
+  }
+}
+
+@media all and (max-width: 650px) {
+  #map1 {
+  height: 178.44px;
+  }
+}
+
+
+
+@media all and (max-width: 575px) {
+  #map1 {
+  height: 157.85px;
+  }
+}
+
+
+@media all and (max-width: 500px) {
+  #map1 {
+  height: 137.26px;
+  }
+}
+
+
+@media all and (max-width: 425px) {
+  #map1 {
+  height: 116.67px;
+  }
+}

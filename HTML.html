@@ -1,46 +1,35 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="Css.css">
   <link rel="stylesheet" href="Slideshow.css">
-  <link rel="stylesheet" href="slider.css">
-  <link href='https://fonts.googleapis.com/css?family=Linden Hill' rel='stylesheet'>
-  <link href="https://fonts.googleapis.com/css?family=Akronim" rel="stylesheet">
-  <link href='https://fonts.googleapis.com/css?family=Cardo' rel='stylesheet'>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
-<body onscroll="myFunction()" style="background-color:#f1f1f1">
+<body onscroll="myFunction() style="background-color:#f1f1f1">
 <div class="font">
+<div class="header">
+  <h2>Scroll Down</h2>
+  <p>Scroll down to see the sticky effect.</p>
+</div>
 
-<div id="navbar1">
 <div id="navbar">
-  <div class="hright">
-    <a class="active" href="index.html">Home</a>
-    <a href="vtest.html">Vehicle</a>
-    <a href="About us.html">Team</a>
-    <a href="spon.html">Sponsors</a>
-    <a href="cont.html">Contact Us</a>
-  </div>
-</div>
-<img src="12321225_1034387513300440_4000601897647114688_n.png" class="himage">
-<div class="hleft">
-  <p> NITR AUV </p>
-</div>
+  <a class="active" href="HTML.html">Home</a>
+  <a href="Vehicle.html">Vehicle</a>
+  <a href="About us.html">Team</a>
+  <a href="javascript:void(0)">Sponsors</a>
+  <a href="javascript:void(0)">Contact Us</a>
 </div>
 
-<div id="slider">
-<figure>
-<img src="1.jpg">
-<img src="2.jpg">
-<img src="3.jpg">
-<img src="1.jpg">
-<img src="2.jpg">
-</figure>
+<div class="box">
+<section>
+  <img class="mySlides fade" src="1.jpg" style="width:100%">
+  <img class="mySlides fade" src="2.jpg" style="width:100%">
+  <img class="mySlides fade" src="3.jpg" style="width:100%">
+</section>
 </div>
 
 <div class="left">
-    <p class="head1">About Us </p>
+    <h1>About Us </h1>
     <p>
       PVAMU RoboSub is an entirely student focused endeavor based on innovation, excellence
       and professionalism. Students and faculty work cohesively to gain a unique
@@ -52,27 +41,27 @@
 </div>
 
 <div class="right">
-  <p class="head1"> Latest News</p>
-  <table id="table">
+  <h1> Latest News</h1>
+  <table cellpadding="3">
     <tr>
-      <td>Launch of website</th>
-      <td>19/10/2017</th>
+      <th>Launch of website</th>
+      <th>19/10/2017</th>
     </tr>
     <tr>
-      <td>Team won third position at the SAVe competition held by NIOT</th>
-      <td>14/12/2016</th>
+      <th>Team won third position at the SAVe competition held by NIOT</th>
+      <th>14/12/2016</th>
     </tr>
     <tr>
-      <td>Design of the bot is ready</th>
-      <td>13/04/2017</th>
+      <th>Design of the bot is ready</th>
+      <th>13/04/2017</th>
     </tr>
     <tr>
-      <td>Sponsored by Intel</th>
-      <td>17/10/2017</th>
+      <th>Sponsored by Intel</th>
+      <th>17/10/2017</th>
     </tr>
     <tr>
-      <td>New members added</th>
-      <td>17/03/2017</th>
+      <th>New members added</th>
+      <th>17/03/2017</th>
     </tr>
   </table>
 </div>
@@ -80,9 +69,9 @@
 
 <div class="social">
   <div class="content">
-      <p class="head1" style="text-align: center">
+      <h2 style="text-align: center">
         Team History
-      </p>
+      </h2>
       <p>
       TEAM AUV traces its origin to December, 2010 when a group of students from varied engineering streams like 
       computer science, electrical, mechanical and ocean engineering came together to deploy their skills . Since
@@ -92,6 +81,7 @@
       its first vehicle ‘Kraken 1.0’ in June 2011, overcoming hurdles like cost,
       </p>
   </div>
+</div>
 <div class="content">  
 <div class="contain">
   <img src="63623807108134025112080147_team-building.jpg" alt="Avatar" class="image" style="width:100%">
@@ -115,7 +105,7 @@
 </div>
 </div>
 <br><br><br><br><br>
-</div>
+
 <div class="footer">
   <p>&copy;2017 NIT Rourkela - AUV Team &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
   &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
@@ -123,5 +113,6 @@
   <span><a href="#"><i class="fa fa-linkedin"></i></a></span></p>
 </div>
 </div>
+<script src="java.js"></script>
 </body>
 </html>

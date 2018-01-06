@@ -5,12 +5,17 @@
   <link rel="stylesheet" href="Css.css">
   <link rel="stylesheet" href="Slideshow.css">
   <link rel="stylesheet" href="slider.css">
+  <link href='https://fonts.googleapis.com/css?family=Lato:100italic' rel='stylesheet' type='text/css'>
   <link href='https://fonts.googleapis.com/css?family=Linden Hill' rel='stylesheet'>
   <link href="https://fonts.googleapis.com/css?family=Akronim" rel="stylesheet">
   <link href='https://fonts.googleapis.com/css?family=Cardo' rel='stylesheet'>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
 </head>
-<body onscroll="myFunction()" style="background-color:#f1f1f1">
+<body style="background-color:#f1f1f1">
+<a href="#top" onclick="scrollToTop();return false">
+<button onclick="topFunction()" id="myBtn" title="Go to top"><p>&#x27BA;</p></button>
+</a>
 <div class="font">
 
 <div id="navbar1">
@@ -19,19 +24,38 @@
     <a class="active" href="index.html">Home</a>
     <a href="vtest.html">Vehicle</a>
     <a href="About us.html">Team</a>
+	<a href="News.html">News</a>
     <a href="spon.html">Sponsors</a>
     <a href="cont.html">Contact Us</a>
   </div>
 </div>
-<img src="12321225_1034387513300440_4000601897647114688_n.png" class="himage">
-<div class="hleft">
-  <p> NITR AUV </p>
+
+<div id="navSmall">
+  <div class="container-bar" onclick="myFunction(this)">
+    <div class="bar1"></div>
+    <div class="bar2"></div>
+    <div class="bar3"></div>
+  </div>
+  <div id="navDisp" class="hright dispNone">
+    <a class="active" href="index.html">Home</a>
+    <a href="vtest.html">Vehicle</a>
+    <a href="About us.html">Team</a>
+	<a href="News.html">News</a>
+    <a href="spon.html">Sponsors</a>
+    <a href="cont.html">Contact Us</a>
+  </div>
+</div>
+<div id="applied">
+  <img src="12321225_1034387513300440_4000601897647114688_n.png" class="himage">
+  <div class="hleft">
+    <p> TIBURON </p>
+  </div>
 </div>
 </div>
 
 <div id="slider">
 <figure>
-<img src="1.jpg">
+<img src="Pics/IMG_20160107_145159.jpg">
 <img src="2.jpg">
 <img src="3.jpg">
 <img src="1.jpg">
@@ -39,31 +63,29 @@
 </figure>
 </div>
 
-<div class="left">
-    <p class="head1">About Us </p>
-    <p>
-      PVAMU RoboSub is an entirely student focused endeavor based on innovation, excellence
-      and professionalism. Students and faculty work cohesively to gain a unique
-      applied experience with high-tech instrumentation. The collaboration creates
-      interesting ideas and produces next generation concepts. It is this ideology
-      that has made PVAMU RoboSub the most comprehensive and technologically advanced
-      program of its kind.
+<div class="left card-0">
+    <p class="head2">About Us </p>
+	<span class="line"></span>
+    <p align="justify">
+      &nbsp&nbsp&nbsp Team Tiburon is a group of dedicated and innovative students, based in NIT Rourkela. Formed in 2014, the team
+      works towards designing and developing an AUV capable of performing a plethora of tasks underwater, all without
+      a human pilot! The interdisciplinary team primarily aspires to contribute to the emerging fields of Marine Robotics
+      and Autonomous Systems. As part of its yearly activities, the team also participates in leading national and
+      international level competitions, aiming to gain exposure and test its vehicle against teams from other institutes.
+      What prominently stands up apart from others is the cost-effectiveness and light weight of our vehicles.
     </p>
 </div>
 
-<div class="right">
-  <p class="head1"> Latest News</p>
+<div class="right card-0">
+  <p class="head2"> Latest News</p>
+  <span class="line"></span>
   <table id="table">
-    <tr>
-      <td>Launch of website</th>
-      <td>19/10/2017</th>
-    </tr>
     <tr>
       <td>Team won third position at the SAVe competition held by NIOT</th>
       <td>14/12/2016</th>
     </tr>
     <tr>
-      <td>Design of the bot is ready</th>
+      <td>Design of the latest bot (Hammerhead) ready</th>
       <td>13/04/2017</th>
     </tr>
     <tr>
@@ -71,8 +93,12 @@
       <td>17/10/2017</th>
     </tr>
     <tr>
-      <td>New members added</th>
-      <td>17/03/2017</th>
+      <td>Autonomous Underwater Vehicle Exhibition, NIT Rourkela</th>
+      <td>4/11/17 - 5/11/16</th>
+    </tr>
+    <tr>
+      <td>Launch of website</th>
+      <td>19/10/2017</th>
     </tr>
   </table>
 </div>
@@ -80,48 +106,56 @@
 
 <div class="social">
   <div class="content">
-      <p class="head1" style="text-align: center">
+      <p class="head2" style="text-align: center">
         Team History
       </p>
-      <p>
-      TEAM AUV traces its origin to December, 2010 when a group of students from varied engineering streams like 
-      computer science, electrical, mechanical and ocean engineering came together to deploy their skills . Since
-      then, we have been involved in the development of autonomous underwater vehicles (AUVs). Our insight into
-      the challenges of underwater navigation like depth pressure, water leakage, buoyancy and stability related
-      issues, poor underwater lightning etc. helped us to come up with efficient solutions. The team thus developed
-      its first vehicle ‘Kraken 1.0’ in June 2011, overcoming hurdles like cost,
+      <p align="justify">
+        October, 2014 marked the beginning of Team Tiburon when a group of students from varied streams of engineering
+        like computer science, electrical and mechanical came together to deploy their skills. The team, starting with
+        just a handful of members, thus developed its first vehicle Tiburon 1.0 in January 2015. We were the first NIT
+        to reach the final round of the national competition SAVe 2015, and secured the sixth position. The team moved
+        forward with a more advanced vehicle, Tiburon 2.0, possible by the contributions of our esteemed sponsors and
+        the incessant efforts of the enthusiastic technocrats of our team. This vehicle helped us in marking a golden
+        page in the history of Team Tiburon – third position in SAVe 2016. Our vehicle was recognised as the lightest,
+        smallest and most cost-effective vehicle. 
       </p>
   </div>
-<div class="content">  
-<div class="contain">
-  <img src="63623807108134025112080147_team-building.jpg" alt="Avatar" class="image" style="width:100%">
-  <div class="middle">
-    <div class="tex"><a href="About us.html">Team</a></div>
-  </div>
-</div>
 
-<div class="contain">
-  <img src="63623807108134025112080147_team-building.jpg" alt="Avatar" class="image" style="width:100%">
-  <div class="middle">
-    <div class="tex"><a href="vtest.html">Vehicle</a></div>
-  </div>
-</div>
-
-<div class="contain">
-  <img src="63623807108134025112080147_team-building.jpg" alt="Avatar" class="image" style="width:100%">
-  <div class="middle">
-    <div class="tex"><a href="spon.html">Sponsors</a></div>
-  </div>
-</div>
-</div>
-<br><br><br><br><br>
 </div>
 <div class="footer">
-  <p>&copy;2017 NIT Rourkela - AUV Team &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
-  &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
-  <span><a href="#"><i class="fa fa-facebook-official"></i></a></span>
-  <span><a href="#"><i class="fa fa-linkedin"></i></a></span></p>
+  <div class="row1">
+    <div class="left-col">
+	  <div class="head-footer">
+	    <p style="margin-left: 27%;" align="left"> Team </p>
+	  </div>
+	  <div style="line-height:1.5; margin-left:20%; text-align:left" class="list">
+	    <p><img style="width: 10%; padding-right:3%" src="about-512-icon-201310539.png"> About Us </p>
+		<p><img style="width: 10%; padding-right:3%" src="5614938_orig.png"> Contact Us </p>
+		<p><img style="width: 10%; padding-right:3%" src="063-free-vehicle.png"> Vehicles </p>
+	  </div>
+	</div>
+	<div class ="middle-col">
+	  <div class="head-footer">
+	    <p align="center"> Connect with us </p>
+	  </div>
+	  <div class="img1">
+	    <img style="width:15%; margin-left:-10%" src="768px-Facebook_Logo_Mini.png">
+	    <img style="width:15%" src="Gmail_Icon.png">
+	    <img style="width:15%; margin-right:-10%" src="linkedin-3-512.png">
+	  </div>
+	</div>
+	<div class="right-col">
+	  <div class="head-footer">
+	    <p style="margin-left: 20%; line-height:1.5" align="left"> Contact </p>
+	  </div>
+	  <p> AUV Room, Central Workshop, NIT Rourkela, Sector-2, Rourkela </p>
+	  <p> <img align="middle" style="width: 10%; height:10%" src="3083777_orig.png"> tiburonnitr@gmail.com </p>
+	  <p> <img align="middle" style="width: 10%; height:10%" src="117039-matte-blue-and-white-square-icon-business-phone1.png"> 9969696969 </p>
+	</div>
+  </div>
+  <p style="margin-left: 35%; margin-top: -3%">&copy;2017 NIT Rourkela - AUV Team</p>
 </div>
 </div>
+<script src="Java.js"></script>
 </body>
 </html>

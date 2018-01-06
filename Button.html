@@ -1,0 +1,36 @@
+<html>
+<head>
+<style>
+button {
+  display: none;
+  position: fixed;
+  bottom: 2%;
+  right: 2%;
+}
+
+</style>
+</head>
+<body>
+<div style="height:2000px;">
+  <h3>Scroll down</h3>
+</div>
+<button onclick="scrollToTop(1000);"><img src="2000px-Arrow_Blue_Up_001.svg.png"></button>
+<script>
+function scrollToTop(scrollDuration) {
+    var cosParameter = window.scrollY / 2,
+        scrollCount = 0,
+        oldTimestamp = performance.now();
+    function step (newTimestamp) {
+        scrollCount += Math.PI / (scrollDuration / (newTimestamp - oldTimestamp));
+        if (scrollCount >= Math.PI) window.scrollTo(0, 0);
+        if (window.scrollY === 0) return;
+        window.scrollTo(0, Math.round(cosParameter + cosParameter * Math.cos(scrollCount)));
+        oldTimestamp = newTimestamp;
+        window.requestAnimationFrame(step);
+    }
+    window.requestAnimationFrame(step);
+}
+</script>
+</body>
+</html>
+	

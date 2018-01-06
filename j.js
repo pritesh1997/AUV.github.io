@@ -1,14 +1,3 @@
-var navbar1 = document.getElementById("navbar1");
-var sticky = navbar1.offsetTop;
-
-function myFunction() {
-  if (window.pageYOffset >= sticky) {
-    navbar1.classList.add("sticky")
-  } else {
-    navbar1.classList.remove("sticky");
-  }
-}
-
 var electrical = document.getElementById("e");
 var mechanical = document.getElementById("m");
 var software = document.getElementById("s");
@@ -91,4 +80,21 @@ function showSlides(n) {
   }
   slides[slideIndex-1].style.display = "block";  
   dots[slideIndex-1].className += " active";
+}
+
+var navDisp = document.getElementById("navDisp");
+var applied = document.getElementById("applied");
+function myFunction(x) {
+	if (navDisp.className === 'dispNone') {
+	  navDisp.className = 'disp';
+	  applied.classList.remove("nodis");
+	  applied.classList.add("dis");
+	  x.classList.add("change");
+	}
+	else {
+	  navDisp.className = 'dispNone';
+	  applied.classList.remove("dis");
+	  applied.classList.add("nodis");
+	  x.classList.remove("change");
+	}
 }

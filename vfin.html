@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="vfin.css">
+  <link href='https://fonts.googleapis.com/css?family=Lato:100italic' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Linden Hill' rel='stylesheet'>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+<script type="text/javascript" src="ddpowerzoomer.js">
+</script>
+
+<script type="text/javascript">
+
+jQuery(document).ready(function($){
+	EXAMPLE 1:
+	$('#myimage').addpowerzoom()
+
+	EXAMPLE 2:
+	$('#myimage1').addpowerzoom({
+		defaultpower: 2,
+		powerrange: [2,8],
+		largeimage: null,
+		magnifiersize: [400,400]
+	})
+	EXAMPLE 3:
+	$('#myimage2').addpowerzoom({
+		defaultpower: 2,
+		powerrange: [2,5],
+		largeimage: null,
+		magnifiersize: [200,200]
+	})
+
+})
+
+</script>
+<script type="text/javascript">
+jQuery(document).ready(function($){ 
+ $('#myimage').addpowerzoom()
+})
+</script>
+<script type="text/javascript">
+jQuery(document).ready(function($){ 
+ $('#myimage1').addpowerzoom()
+})
+</script>
+<script type="text/javascript">
+jQuery(document).ready(function($){ 
+ $('#myimage2').addpowerzoom()
+})
+</script>
+</head>
+<body onscroll="myFunction()" style="background-color: #f1f1f1">
+<div id="navbar1">
+<div id="navbar">
+  <div class="hright">
+    <a href="index.html">Home</a>
+    <a class="active" href="vtest.html">Vehicle</a>
+    <a href="About us.html">Team</a>
+	<a href="News.html">News</a>
+    <a href="spon.html">Sponsors</a>
+    <a href="cont.html">Contact Us</a>
+  </div>
+</div>
+<img src="12321225_1034387513300440_4000601897647114688_n.png" class="himage">
+<div class="hleft">
+  <p> TIBURON </p>
+</div>
+</div>
+<div class="font1">
+<p class="head0 vhead">Hammerhead</p>
+
+<div class="row">
+  <div class="col-sm-7 sm6">
+    <div class="left1 rotate" id="myimage2">
+      <img src="fin2.png" class="wid">
+    </div>
+  </div>
+  <div class="vright1">
+  <div class="col-sm-5 vright">
+    <p class="vhead1">Key Features</p>
+    <ul>
+      <li>Real Time Dynamic Thrust Vectoring</li>
+      <li>Modular Quick-Access PCB Backplane</li>
+      <li>Modular Hot-Swappable Battery Pods</li>
+      <li>Modular Bulkhead Panels </li>
+      <li>6 Degrees of Freedom</li>
+    </ul>
+	<br>
+	<p class="vhead1">Side View</p>
+    <img id="myimage" src="vside.png" style="width: 100%">
+	<br>
+    <p class="vhead1">Front View</p>
+    <img id="myimage1" src="vfront.png" style="width: 100%">
+  </div>
+  </div>
+</div>
+
+<div class="vcontent">
+    <p class="vhead1">Key Features</p>
+    <ul style="line-height:150%; font-size: 18px">
+      <li>Real Time Dynamic Thrust Vectoring</li>
+      <li>Modular Quick-Access PCB Backplane</li>
+      <li>Modular Hot-Swappable Battery Pods</li>
+      <li>Modular Bulkhead Panels </li>
+      <li>6 Degrees of Freedom</li>
+    </ul>
+    <p class="vhead1">Front View</p>
+    <img src="vfront.png" style="width: 100%">
+    <p class="vhead1">Side View</p>
+    <img src="vside.png" style="width: 100%">
+</div>

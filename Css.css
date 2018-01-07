@@ -199,14 +199,14 @@ body {
 .dispNone {
   display: none;
   animation-name: up;
-  animation-time: 1s;
+  animation-duration: 1s;
   transition: 1s;
 }
 
 .disp {
   display: block;
   animation-name: down;
-  animation-time: 1s;
+  animation-duration: 1s;
   transition: 1s;
   
 }
@@ -556,8 +556,8 @@ body {
   bottom: 2%;
   right: 2%;
   background: #f2f2f2;
-  width: 4%;
-  height: 7%;
+  width: 45px;
+  height: 45px;
   text-decoration: none;
   border-style: solid;
   border-width: 1.5px;
@@ -576,8 +576,8 @@ body {
 #myBtn p {
   transform: rotate(-90deg);
   color:black;
-  font-size: 2.9vw;
-  margin-top: -20%;
+  font-size: 30px;
+  margin-top: -5%;
   margin-left: -15%;
   -webkit-transition: all 0.3s linear;
   -moz-transition: all 0.3s ease;
@@ -1066,7 +1066,7 @@ body {
   }
   
   .dis .hleft {
-    margin-top:-47.1%;
+    margin-top:-47.25%;
   }
 
   .dis .himage {
@@ -1108,7 +1108,7 @@ body {
   }
   
   .dis .hleft {
-    margin-top:-49.1%;
+    margin-top:-48.6%;
   }
 
   .dis .himage {
@@ -1139,7 +1139,7 @@ body {
   }
   
   .dis .hleft {
-    margin-top:-50.1%;
+    margin-top:-49.55%;
   }
 
   .dis .himage {
@@ -1167,7 +1167,7 @@ body {
   }
   
   .dis .hleft {
-    margin-top:-53.3%;
+    margin-top:-52.4%;
   }
 
   .dis .himage {
@@ -1175,6 +1175,33 @@ body {
   }
   .container-bar {
     margin-top: -5.8%;
+  }
+}
+@media screen and (max-width: 675px) {
+  .himage {
+    margin-top: 0.3%; 
+  }
+  .hleft {
+    margin-top: -15.5%;
+	margin-left: 16%;
+  }
+  .nodis .himage {
+    margin-top: 0.3%;
+  }
+  
+  .nodis .hleft {
+    margin-top: -15.5%;
+  }
+  
+  .dis .hleft {
+    margin-top:-53.8%;
+  }
+
+  .dis .himage {
+    margin-top: 0.3%;
+  }
+  .container-bar {
+    margin-top: -6.2%;
   }
 }
 
@@ -1235,6 +1262,35 @@ body {
   }
 }
 
+@media screen and (max-width: 575px) {
+ .himage {
+    margin-top: 0.3%;
+    margin-left:3%;	
+  }
+  .hleft {
+    margin-top: -17.5%;
+	margin-left: 17.5%;
+  }
+  .nodis .himage {
+    margin-top: 0.3%;
+  }
+  
+  .nodis .hleft {
+    margin-top: -17.5%;
+  }
+  
+  .dis .hleft {
+    margin-top:-58.4%;
+  }
+
+  .dis .himage {
+    margin-top: 0.3%;
+  }
+  .container-bar {
+    margin-top: -6.8%;
+  }
+}	
+
 @media screen and (max-width: 550px) {
   .himage {
     margin-top: 0.3%;
@@ -1253,7 +1309,36 @@ body {
   }
   
   .dis .hleft {
-    margin-top:-60.6%;
+    margin-top:-60.4%;
+  }
+
+  .dis .himage {
+    margin-top: 0.3%;
+  }
+  .container-bar {
+    margin-top: -7.5%;
+  }
+}
+
+@media screen and (max-width: 525px) {
+  .himage {
+    margin-top: 0.3%;
+    margin-left:3%;	
+  }
+  .hleft {
+    margin-top: -19.5%;
+	margin-left: 17.5%;
+  }
+  .nodis .himage {
+    margin-top: 0.3%;
+  }
+  
+  .nodis .hleft {
+    margin-top: -19.5%;
+  }
+  
+  .dis .hleft {
+    margin-top:-62.3%;
   }
 
   .dis .himage {

@@ -469,7 +469,7 @@ body {
   top: 50%;
   left: 33%;
   transform: translate(-3%, -50%);
-  -ms-transform: translate(-3%, -50%)
+  -ms-transform: translate(-3%, -50%);
 }
 
 .contain:hover .image {
@@ -612,9 +612,21 @@ body {
 }
 .row1 {
   width: 100%;
+  font-size: 16px;
 }
+
+.row1 a {
+  text-decoration: none;
+  color: white;
+}
+
+.row1 a:hover {
+  opacity: 0.7;
+  transition: all 0.3s ease;
+}
+  
 .left-col {
-  margin-left: 10%;
+  margin-left: 15%;
   max-width: 25%;
 }
 .middle-col {
@@ -623,15 +635,30 @@ body {
   max-width: 30%;
 }
 .right-col {
-  margin-top: -9.8%;
-  margin-left: 65%;
+  margin-top: -165px;
+  margin-left: 60%;
   margin-right: 10%;
   padding-bottom: 4%;
   line-height: 120%;
 }
 .head-footer {
   font: 1.7vw;
+  font-weight: bold;
 }
+.copyright {
+  margin-left: 35%;
+  margin-top: 0px;
+  color: white;
+}
+
+.right-col-header {
+  margin-left: 20%;
+}
+
+.connect-footer {
+  margin-left: 20%;
+}
+
 .list {
   list-style: none;
 }
@@ -640,29 +667,28 @@ body {
   width: 100%;
 }
 
+.social-font {
+  padding-left: 25%;
+  font-size: 20px;
+}
+
 .fa {
-  padding: 1%;
-  font-size: 6vw;
-  width: 5%;
-  text-align: center;
-  text-decoration: none;
-  margin: 1% 1%;
-  border-radius: 50%;
+  font-size: 50px;
 }
 
 .fa:hover {
     opacity: 0.7;
 }
 
+.fa-mobile {
+  font-size: 60px;
+}
+
 .fa-facebook {
-  text-align: right;
-  background: white;
-  color: black;
+  color: white;
 }
 
 .fa-linkedin {
-  text align: right;
-  background: black;
   color: white;
 }
 
@@ -824,10 +850,10 @@ body {
     max-width:92%;
   }
   .left-col {
-	max-width: 100%;
+	max-width: 30%;
 	text-align: left;
-	padding-bottom: 8%;
-	margin-left: -20%;
+	padding-bottom: 165px;
+	margin-left: 7%;
   }
   .middle-col {
 	max-width: 100%;
@@ -838,8 +864,25 @@ body {
   .right-col {
 	max-width: 50%; 
 	text-align: left;
-	margin-left:-1%;
+	margin-left:-3%;
   }
+  .copyright {
+    margin-left: 7%;
+  }
+  
+  .left-col-header {
+	margin-left: 0%;
+	line-height:1.5;
+  }
+  
+  .right-col-header {
+    margin-left: 20%;
+  }
+  
+  .connect-footer {
+    margin-left: 18%;
+  }
+  
   .extra {
     display:none;
   }
@@ -870,7 +913,7 @@ body {
 	margin-left: 15%;
   }
   .hright {
-  margin-left: 52%;
+    margin-left: 52%;
   }
 }
 
@@ -977,6 +1020,12 @@ body {
   }
 }
 
+@media screen and (max-width: 950px){
+  .right-col {
+    margin-top: -185px;
+  }
+}
+
 @media screen and (max-width: 900px){
   .himage {
     margin-top: -6px;
@@ -989,6 +1038,9 @@ body {
   .hright {
     padding-top: 5%;
     margin-left: 21%;
+  }
+  .right-col {
+    margin-top: -185px;
   }
 }
 
@@ -1115,7 +1167,7 @@ body {
   }
   
   .dis .hleft {
-    margin-top:-52.1%;
+    margin-top:-53.3%;
   }
 
   .dis .himage {

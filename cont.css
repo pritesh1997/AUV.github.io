@@ -36,14 +36,14 @@ i {
 .dispNone {
   display: none;
   animation-name: up;
-  animation-time: 1s;
+  animation-duration: 1s;
   transition: 1s;
 }
 
 .disp {
   display: block;
   animation-name: down;
-  animation-time: 1s;
+  animation-duration: 1s;
   transition: 1s;
   
 }
@@ -339,6 +339,7 @@ body {
 .social {
   position: fixed;
   top: 20px;
+  z-index: 99;
 }
 
 .social ul {
@@ -475,19 +476,105 @@ body {
 
 }
 
-
-
-
 .footer {
   position: relative;
   left: 0;
   bottom: 0;
   width: 100%;
-  padding: 4% 0 4% 2.5%;
-  background-color: black;
+  padding: 0.5% 0 0.5% 2.5%;
+  background-color: #111;
   color: white;
   text-align: left;
+  font-family: Lato;
+  font-variant: normal;
+  font-weight: 200;
 }
+.row1 {
+  width: auto;
+  font-size: 17px;
+}
+
+.row1 p {
+  padding-top: 8px;
+}
+
+.row1 a {
+  text-decoration: none;
+  color: white;
+}
+
+.row1 a:hover {
+  opacity: 0.7;
+  transition: all 0.5s ease;
+}
+  
+.left-col {
+  margin-left: 15%;
+  max-width: 25%;
+  line-height: 120%;
+}
+.middle-col {
+  margin-top: -12.5%;
+  margin-left: 30%;
+  max-width: 30%;
+}
+.right-col {
+  margin-top: -130px;
+  margin-left: 60%;
+  margin-right: 10%;
+  padding-bottom: 4%;
+  line-height: 150%;
+}
+.head-footer {
+  font: 1.7vw;
+  font-family: Lato;
+  font-variant: normal;
+  font-weight: bold;
+}
+.copyright {
+  margin-left: 35%;
+  margin-top: -12px;
+  color: white;
+}
+
+.right-col-header {
+  margin-left: 20%;
+}
+
+.connect-footer {
+  margin-left: 20%;
+}
+
+.img1 {
+  margin-left: 35%;
+  width: 100%;
+}
+
+.social-font {
+  padding-left: 25%;
+  font-size: 20px;
+}
+
+.fa {
+  font-size: 50px;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-mobile {
+  font-size: 60px;
+}
+
+.fa-facebook {
+  color: white;
+}
+
+.fa-linkedin {
+  color: white;
+}
+
 
 /* media queries */
 
@@ -1275,4 +1362,54 @@ body {
   .container-bar {
     margin-top: -8.5%;
   }
+}
+
+
+@media screen and (max-width: 930px){
+  .right-col {
+    margin-top: -155px;
+  }	
+}
+
+@media screen and (max-width: 800px) {
+  .left-col {
+	max-width: 40%;
+	text-align: left;
+	padding-bottom: 165px;
+	margin-left: 7%;
+  }
+  .middle-col {
+	max-width: 100%;
+	text-align: left;
+	padding-bottom: 6%;
+	margin-left: -22%;
+  }
+  .right-col {
+	max-width: 50%; 
+	text-align: left;
+	margin-left:-3%;
+  }
+  .copyright {
+    margin-left: 7%;
+  }
+  
+  .left-col-header {
+	margin-left: 0%;
+	line-height:1.5;
+  }
+  
+  .right-col-header {
+    margin-left: 20%;
+  }
+  
+  .connect-footer {
+    margin-left: 18%;
+  }
+  
+  .extra {
+    display:none;
+  }
+  .head3 {
+	font-size: 3.75vw;
+  }  
 }

@@ -6,6 +6,12 @@ h1 {
   font-size: 80px;
 }
 
+.spon-font {
+  font-family: 'Lato', sans-serif;
+  font-weight: 100;
+  font-size: 18px;
+}
+
 .head-cont {
   margin-top: 7%;	
   margin-bottom: -7%;

@@ -3,7 +3,12 @@ h1 {
   color: blue;
   font-family: 'Lato', sans-serif;
   font-weight: 200;
-  font-size: 50px;
+  font-size: 80px;
+}
+
+.head-cont {
+  margin-top: 7%;	
+  margin-bottom: -7%;
 }
 
 .row > .col1 {
@@ -60,5 +65,14 @@ h1 {
   margin-top: 2%;
 }
 
-@media screen and (max-width: 1100px){
-  .
+@media screen and (max-width: 1150px){
+  .head-cont {
+    margin-top: 14%;
+  }
+}
+
+@media screen and (max-width: 800px){
+  .head-cont {
+    margin-top: 7%;
+  }
+}

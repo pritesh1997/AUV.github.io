@@ -1,0 +1,139 @@
+div {
+  position: relative;
+}
+
+@-webkit-keyframes lborder {
+  from {left: 50%; right: 50%; width: 0;}
+  to {left: 0; right: 0; width: 100%;}
+}
+
+@keyframes lborder {
+  from {left: 50%; right: 50%; width: 0;}
+  to {left: 0; right: 0; width: 750px;}
+}
+
+#nav {
+  cursor: pointer;
+  left: 50%; top: -2%;
+  margin-left: 25%;
+  width: 750px;
+  font-size: 2vw; 
+  list-style: none;
+  background-color: inherit;
+}
+#nav li {
+  float: left;  
+}
+#nav a {
+  display:inline
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+} 
+#nav a:hover {
+  color: green;
+  -webkit-transition: color .25s linear;
+  -moz-transition: color .25s linear;
+  -o-transition: color .25s linear;
+  transition: color .25s linear;
+}
+
+#nav a.active {
+  color: green;
+  background-color: inherit;
+  border-top-style: none;
+  border-right-style: none;
+  border-bottom-style: ridge;
+  border-left-style: none;
+  border-width: medium;
+  border-color: green;
+  -webkit-animation: lborder .5s infinite;
+  animation: lborder .5s infinite;
+} 
+
+@media all and (max-width: 1300px) {
+  #nav {
+    margin-left: 23.79%;
+  }
+}  
+@media all and (max-width: 1200px) {
+  #nav a {
+    padding: 12.29px 14.055px;
+  }
+  #nav {
+    margin-left: 21.96%;
+  }
+}
+
+@media all and (max-width: 1100px) {
+  #nav a {
+    padding: 11.27px 12.88px;
+  }
+  #nav {
+    margin-left: 20.13%;
+  }
+}
+
+@media all and (max-width: 1000px) {
+  #nav a {
+    padding: 10.24px 11.71px;
+  }
+  #nav {
+    margin-left: 18.301%;
+  }
+}
+
+@media all and (max-width: 900px) {
+  #nav a {
+    padding: 9.22px 10.54px;
+  }
+  #nav {
+    margin-left: 15.97%;
+  }
+}
+
+@media all and (max-width: 800px) {
+  #nav a {
+    padding: 8.19px 9.37px;
+  }
+  #nav {
+    margin-left: 14%;
+  }
+}
+
+@media all and (max-width: 700px) {
+  #nav a {
+    padding: 7.17px 8.199px;
+  }
+  #nav {
+    margin-left: 12.211%;
+  }
+}
+
+@media all and (max-width: 600px) {
+  #nav a {
+    padding: 6.14px 7.02px;
+  }
+  #nav {
+    margin-left: 10.38%;
+  }
+}
+
+@media all and (max-width: 500px) {
+  #nav a {
+    padding: 5.12px 5.85px;
+  }
+  #nav {
+    margin-left: 8.55%;
+  }
+}
+
+@media all and (max-width: 400px) {
+  #nav a {
+    padding: 4.09px 4.68px;
+  }
+  #nav {
+    margin-left: 6.72%;
+  }
+}
